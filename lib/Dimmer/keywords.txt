@@ -1,0 +1,26 @@
+#######################################
+# Syntax Colouring Map For Dimmer
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+Dimmer	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+off	KEYWORD2
+on	KEYWORD2
+toggle	KEYWORD2
+getValue	KEYWORD2
+getState	KEYWORD2
+set	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+DIMMER_NORMAL	LITERAL1
+DIMMER_RAMP	LITERAL1
+DIMMER_COUNT	LITERAL1
