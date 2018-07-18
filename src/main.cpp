@@ -51,7 +51,7 @@ template <class T> int EEPROM_readAnything(int ee, T& value)
 struct Config{
   int key=0;
   uint8_t pot=0;
-  uint8_t volt=0;
+  uint8_t volt=1;
 }config;
 
 void defaultConfig(){
@@ -124,7 +124,7 @@ void loop(void) {
   }else if(current_selection == 2 ){
     u8g2.userInterfaceInputValue("Potência\n", NULL, &config.pot, 0, 100, 3, "%");
   }else if ( current_selection == 3 ){
-    current_selection = u8g2.userInterfaceSelectionList("Tensão",config.volt,string_list_tensao);
+    config.volt = u8g2.userInterfaceSelectionList("Tensão",config.volt,string_list_tensao);
   }else if(current_selection==4){
     uint8_t save = u8g2.userInterfaceMessage("Salvar","Configurações?","",  " Ok \n Cancelar");
     if(save==1){
