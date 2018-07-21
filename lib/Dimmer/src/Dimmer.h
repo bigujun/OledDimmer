@@ -21,7 +21,8 @@
 #elif defined(__AVR_ATmega32U4__)
 #define DIMMER_TIMER 3
 #else
-#define DIMMER_TIMER 2
+// #define DIMMER_TIMER 2
+#define DIMMER_TIMER 1
 #endif
 
 /**
